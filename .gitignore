@@ -1,0 +1,42 @@
+# Логи и временные файлы
+logs/
+*.log
+*.tmp
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Swift / Xcode / SPM
+.build/
+.swiftpm/
+.xcode/
+DerivedData/
+*.xcworkspace/
+xcuserdata/
+ModuleCache/
+Modules/
+*.dSYM/
+description.json
+plugin-tools-description.json
+swift-version--*.txt
+build.db
+plugin-tools.yaml
+workspace-state.json
+release.yaml
+
+# Артефакты сборки и дистрибутивы
+build/
+dist/
+output/*/.build/
+*.dmg
+*.ipa
+*.app
+
+# IDE
+.idea/
+*.swp
