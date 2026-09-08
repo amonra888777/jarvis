@@ -1,0 +1,76 @@
+BUILD REPORT — 2026-09-08 17:42:56.623339
+============================================================
+
+Archive: archive
+Output: output
+
+JarvisCore: ❌ FAIL
+  Error: [0/1] Planning build
+Building for production...
+[0/4] Write sources
+[1/4] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Compiling JarvisCore main.swift
+/Users/markluck/jarvis-build/output/JarvisCore/Sources/JarvisCore/main.swift:11:27: error: 'NWListener' is only available in macOS 10.14 or newer
+ 8 | }
+ 9 | 
+10 | final class JarvisServer {
+   |             `- note: add '@available' attribute to enclosing class
+11 |     private var listener: NWListener?
+   |                           `- error: 'NWListener' is only available in macOS 10.14 or newer
+12 |     private var connections: [NWConnection] = []
+13 |     private var startTime: Date?
+
+/Users/markluck/jarvis-build/output/JarvisCore/Sources/JarvisCore/main.swift:12:31: error: 'NWConnection' is only available in macOS 10.14 or newer
+ 8 | }
+ 9 | 
+10 | final class JarvisServer {
+   |             `- note: add '@available' attribute to enclosing class
+11 |     private var listener: NWListener?
+12 |     private var connections: [NWConnec
+
+JarvisGUI: ❌ FAIL
+  Error: [0/1] Planning build
+Building for production...
+[0/4] Write sources
+[1/4] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Compiling JarvisGUI main.swift
+/Users/markluck/jarvis-build/output/JarvisGUI/Sources/JarvisGUI/main.swift:15:20: error: 'NWConnection' is only available in macOS 10.14 or newer
+ 9 | 
+10 | @main
+11 | struct JarvisGUIApp {
+   |        `- note: add '@available' attribute to enclosing struct
+12 |     static func main() {
+   |                 `- note: add '@available' attribute to enclosing static method
+13 |         print("=== JARVIS GUI CLIENT v1.0 ===")
+14 |         print("Подключение к 127.0.0.1:7777...")
+15 |         let conn = NWConnection(to: .hostPort(host: "127.0.0.1", port: 7777), using: .tcp)
+   |                    |- error: 'NWConnection' is only available in macOS 10.14 or newer
+   |                    `- note: add 'if #available' version check
+16 |         conn.stateUpdateHandler = { state in
+17 |             switch state {
+
+
+JarvisNode: ❌ FAIL
+  Error: [0/1] Planning build
+Building for production...
+[0/4] Write sources
+[1/4] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Compiling JarvisNode main.swift
+/Users/markluck/jarvis-build/output/JarvisNode/Sources/JarvisNode/main.swift:15:20: error: 'NWConnection' is only available in macOS 10.14 or newer
+ 9 | 
+10 | @main
+11 | struct JarvisNodeApp {
+   |        `- note: add '@available' attribute to enclosing struct
+12 |     static func main() {
+   |                 `- note: add '@available' attribute to enclosing static method
+13 |         let id = "node-" + String(UUID().uuidString.prefix(8))
+14 |         print("JarvisNode \(id) запущен")
+15 |         let conn = NWConnection(to: .hostPort(host: "127.0.0.1", port: 7777), using: .tcp)
+   |                    |- error: 'NWConnection' is only available in macOS 10.14 or newer
+   |                    `- note: add 'if #available' version check
+16 |         conn.stateUpdateHandler = { state in
+17 |             switch state {
+
+
+
+Итого: 0/3 собрано

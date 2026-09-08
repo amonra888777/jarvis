@@ -1,0 +1,13 @@
+{
+  "": {
+    "dependencies": "/Users/markluck/jarvis-build/output/JarvisGUI/.build/arm64-apple-macosx/release/JarvisGUI.build/JarvisGUI.d",
+    "object": "/Users/markluck/jarvis-build/output/JarvisGUI/.build/arm64-apple-macosx/release/JarvisGUI.build/JarvisGUI.o",
+    "swift-dependencies": "/Users/markluck/jarvis-build/output/JarvisGUI/.build/arm64-apple-macosx/release/JarvisGUI.build/primary.swiftdeps"
+  },
+  "/Users/markluck/jarvis-build/output/JarvisGUI/Sources/JarvisGUI/main.swift": {
+    "object": "/Users/markluck/jarvis-build/output/JarvisGUI/.build/arm64-apple-macosx/release/JarvisGUI.build/main.swift.o",
+    "swiftmodule": "/Users/markluck/jarvis-build/output/JarvisGUI/.build/arm64-apple-macosx/release/JarvisGUI.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/markluck/jarvis-build/output/JarvisGUI/.build/arm64-apple-macosx/release/JarvisGUI.build/main.swiftdeps",
+    "diagnostics": "/Users/markluck/jarvis-build/output/JarvisGUI/.build/arm64-apple-macosx/release/JarvisGUI.build/main.dia"
+  }
+}

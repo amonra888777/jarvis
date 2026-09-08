@@ -1,0 +1,85 @@
+import os
+
+path = os.path.expanduser("~/Projects/JARVIS-SuperServer/Sources/JarvisServer/OllamaManager.swift")
+
+code = r'''import Foundation
+
+final class OllamaManager {
+    static let shared = OllamaManager()
+    private var process: Process?
+    private(set) var isRunning = false
+    private(set) var binaryPath: String?
+
+    var ollamaURL: String { return "http://127.0.0.1:11434" }
+
+    func setup() {
+        if let p = Bundle.main.path(forResource: "ollama", ofType: nil) {
+            binaryPath = p
+            Logger.shared.write("OllamaManager: bundled ollama: " + p)
+            startProcess()
+        } else if let sys = findSystemOllama() {
+            binaryPath = sys
+            Logger.shared.write("OllamaManager: ollama: " + sys)
+            checkRunning()
+        } else {
+            Logger.shared.write("OllamaManager: ollama not found")
+        }
+    }
+
+    private func findSystemOllama() -> String? {
+        let task = Process()
+        task.launchPath = "/usr/bin/which"
+        task.arguments = ["ollama"]
+        let pipe = Pipe()
+        task.standardOutput = pipe
+        do {
+            try task.run()
+            task.waitUntilExit()
+            let data = pipe.fileHandleForReading.readDataToEndOfFile()
+            let path = String(data: data, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines)
+            return (path?.isEmpty == false) ? path : nil
+        } catch { return nil }
+    }
+
+    private func startProcess() {
+        guard let path = binaryPath else { return }
+        process = Process()
+        process?.launchPath = path
+        process?.arguments = ["serve"]
+        do {
+            try process?.run()
+            isRunning = true
+            Logger.shared.write("OllamaManager: started (PID: " + String(process?.processIdentifier ?? 0) + ")")
+        } catch {
+            Logger.shared.write("OllamaManager: start error: " + error.localizedDescription)
+        }
+    }
+
+    private func checkRunning() {
+        guard let url = URL(string: ollamaURL + "/api/tags") else { return }
+        URLSession.shared.dataTask(with: url) { [weak self] _, response, _ in
+            if let r = response as? HTTPURLResponse, r.statusCode == 200 {
+                self?.isRunning = true
+                Logger.shared.write("OllamaManager: already running")
+            } else {
+                self?.startProcess()
+            }
+        }.resume()
+    }
+
+    func status() -> [String: Any] {
+        return [
+            "running": isRunning,
+            "bundled": Bundle.main.path(forResource: "ollama", ofType: nil) != nil,
+            "path": binaryPath ?? "",
+            "url": ollamaURL
+        ]
+    }
+}
+'''
+
+with open(path, "w", encoding="utf-8") as f:
+    f.write(code)
+
+print("OK: OllamaManager.swift (" + str(len(code)) + " bytes)")
+

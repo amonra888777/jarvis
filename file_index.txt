@@ -1,0 +1,84 @@
+./archive/JarvisShared 3.swift
+./archive/fix_airouter.py
+./archive/fix_webserver.py
+./archive/write_webserver.py
+./archive/jarvis_unified/src/JarvisShared.swift
+./archive/jarvis_unified/src/server/main.swift
+./archive/jarvis_unified/src/common/JarvisShared.swift
+./archive/jarvis_unified/src/client/JarvisClient_main.swift
+./archive/jarvis_unified/src/client/JarvisNode_main.swift
+./archive/jarvis_unified — копия/src/JarvisShared.swift
+./archive/jarvis_unified — копия/src/server/main.swift
+./archive/jarvis_unified — копия/src/common/JarvisShared.swift
+./archive/jarvis_unified — копия/src/client/JarvisClient_main.swift
+./archive/jarvis_unified — копия/src/client/JarvisNode_main.swift
+./archive/jarvis_p3.py
+./archive/JarvisShared 2.swift
+./archive/JARVIS-SuperServer/setup_jarvis.py
+./archive/make_jarvis_app.py
+./archive/JARVIS-SuperServer — копия/setup_jarvis.py
+./archive/JarvisShared.swift
+./archive/1/JarvisShared 3.swift
+./archive/1/fix_airouter.py
+./archive/1/fix_webserver.py
+./archive/1/write_webserver.py
+./archive/1/jarvis_unified/src/JarvisShared.swift
+./archive/1/jarvis_unified/src/server/main.swift
+./archive/1/jarvis_unified/src/common/JarvisShared.swift
+./archive/1/jarvis_unified/src/client/JarvisClient_main.swift
+./archive/1/jarvis_unified/src/client/JarvisNode_main.swift
+./archive/1/jarvis_unified — копия/src/JarvisShared.swift
+./archive/1/jarvis_unified — копия/src/server/main.swift
+./archive/1/jarvis_unified — копия/src/common/JarvisShared.swift
+./archive/1/jarvis_unified — копия/src/client/JarvisClient_main.swift
+./archive/1/jarvis_unified — копия/src/client/JarvisNode_main.swift
+./archive/1/jarvis_p3.py
+./archive/1/JarvisShared 2.swift
+./archive/1/JARVIS-SuperServer/setup_jarvis.py
+./archive/1/make_jarvis_app.py
+./archive/1/JARVIS-SuperServer — копия/setup_jarvis.py
+./archive/1/JarvisShared.swift
+./archive/1/make_jarvis_final.py
+./archive/1/write_index.py
+./archive/1/JarvisClient_main.swift
+./archive/1/setup_jarvis.py
+./archive/1/make_jarvis_full.py
+./archive/1/make_jarvis_clean.py
+./archive/1/build_jarvis.py
+./archive/1/fix_webserver_clean.py
+./archive/1/jarvis_p4.py
+./archive/1/main.swift
+./archive/1/make_jarvis_fixed.py
+./archive/1/JarvisNode_main.swift
+./archive/1/j1.py
+./archive/1/jarvis_v50/JarvisNode/main.swift
+./archive/1/jarvis_v50/Shared/JarvisShared.swift
+./archive/1/jarvis_v50/JarvisClient/main.swift
+./archive/1/jarvis_v50/JarvisServer/main.swift
+./archive/1/jarvis_p1.py
+./archive/1/jarvis_v50 — копия/JarvisNode/main.swift
+./archive/1/jarvis_v50 — копия/Shared/JarvisShared.swift
+./archive/1/jarvis_v50 — копия/JarvisClient/main.swift
+./archive/1/jarvis_v50 — копия/JarvisServer/main.swift
+./archive/make_jarvis_final.py
+./archive/write_index.py
+./archive/JarvisClient_main.swift
+./archive/setup_jarvis.py
+./archive/make_jarvis_full.py
+./archive/make_jarvis_clean.py
+./archive/build_jarvis.py
+./archive/fix_webserver_clean.py
+./archive/jarvis_p4.py
+./archive/main.swift
+./archive/make_jarvis_fixed.py
+./archive/JarvisNode_main.swift
+./archive/j1.py
+./archive/jarvis_v50/JarvisNode/main.swift
+./archive/jarvis_v50/Shared/JarvisShared.swift
+./archive/jarvis_v50/JarvisClient/main.swift
+./archive/jarvis_v50/JarvisServer/main.swift
+./archive/jarvis_p1.py
+./archive/jarvis_v50 — копия/JarvisNode/main.swift
+./archive/jarvis_v50 — копия/Shared/JarvisShared.swift
+./archive/jarvis_v50 — копия/JarvisClient/main.swift
+./archive/jarvis_v50 — копия/JarvisServer/main.swift

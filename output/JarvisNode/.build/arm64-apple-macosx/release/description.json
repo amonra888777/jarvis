@@ -1,0 +1,235 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.JarvisNode-arm64-apple-macosx-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/JarvisNode.build/sources",
+      "importPath" : "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/markluck/jarvis-build/output/JarvisNode/Sources/JarvisNode/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/JarvisNode.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "JarvisNode",
+      "moduleOutputPath" : "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/Modules/JarvisNode.swiftmodule",
+      "objects" : [
+        "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/JarvisNode.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.15",
+        "-whole-module-optimization",
+        "-num-threads",
+        "8",
+        "-serialize-diagnostics",
+        "-O",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "JarvisNode_main",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "jarvisnode"
+      ],
+      "outputFileMapPath" : "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/JarvisNode.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/JarvisNode.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/Modules/JarvisNode.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/markluck/jarvis-build/output/JarvisNode/Sources/JarvisNode/main.swift"
+      ],
+      "tempsPath" : "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/JarvisNode.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "JarvisNode" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "JarvisNode",
+      "-package-name",
+      "jarvisnode",
+      "-c",
+      "/Users/markluck/jarvis-build/output/JarvisNode/Sources/JarvisNode/main.swift",
+      "-I",
+      "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx10.15",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-serialize-diagnostics",
+      "-O",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "JarvisNode_main",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "jarvisnode",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "JarvisNode" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/JarvisNode.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/markluck/jarvis-build/output/JarvisNode/Sources/JarvisNode/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/JarvisNode.build/sources"
+    },
+    "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/JarvisNode.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/JarvisNode.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/JarvisNode.product/Objects.LinkFileList"
+    },
+    "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/markluck/jarvis-build/output/JarvisNode/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
